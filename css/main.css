@@ -1,0 +1,131 @@
+html {
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .6px;
+}
+
+/* globales */
+.max-width{
+    padding: 0 15.4rem;
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.btn{
+    font-size: 1.8rem;
+    color: #F8DAFD;
+    font-weight: bold;
+    border: 2px solid #F8DAFD;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    display: inline-block;
+    margin-top: 2.5rem;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: #F8DAFD;
+    color: #6E00FF;
+}
+/* home */
+    #home{
+        width: 100%;
+        height: 100vh;
+    }
+    .navbar.max-width{
+        padding: 0 15.4rem 0 8rem;
+    }
+    /* navbar */
+    nav{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar{
+        width: 65%;
+        height: 100%;
+        background: #6E00FF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        max-width: 20rem;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .menu a{
+        color: white;
+        font-size: 1.8rem;
+        margin-left: 2.5rem;
+    }
+    .social{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social a img{
+        margin-left: 1rem;
+    }
+
+    /* home content */
+
+    .home-content{
+        background: #6E00FF;
+        max-width: 65%;
+        max-height: 72.5%;
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .subtitle{
+        margin-top: 1rem;
+    }
+    .home-info svg{
+        margin-top: 2rem;
+        display: block;
+    }
+
+    /* animations home */
+    .animation{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    .rectangle1{
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 100%;
+    }
+    .rectangle2{
+        z-index: -1;
+        position: absolute;
+        bottom: -2px;
+        left: 30%;
+        width: 100%;
+    }
