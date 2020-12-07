@@ -1,5 +1,7 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 *{
     margin: 0;
@@ -17,7 +19,7 @@ body{
     padding: 0 15.4rem;
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1.5;
 }
 h2{
@@ -26,14 +28,17 @@ h2{
     z-index: 1;
 }
 h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
+h3 span {
+    font-weight: 600;
+}
 .btn{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #F8DAFD;
     font-weight: bold;
-    border: 2px solid #F8DAFD;
+    border: 3px solid #F8DAFD;
     border-radius: 1rem;
     padding: .5rem 1rem;
     display: inline-block;
@@ -63,16 +68,25 @@ h3{
     .navbar{
         width: 65%;
         height: 100%;
-        background: #6E00FF;
+        background: #6E00EE;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .logo {
-        max-width: 20rem;
+        max-width: 21rem;
     }
-    .logo img{
+    .logo svg{
         width: 100%;
+    }
+    #Ellipse{
+        animation: round 1s ;
+    }
+    @keyframes round{
+        50%{
+            stroke: #6E00EE;
+        }
+
     }
     .menu a{
         color: white;
@@ -88,6 +102,11 @@ h3{
     }
     .social a img{
         margin-left: 1rem;
+        transition: transform .3s ease;
+        cursor: pointer;
+    }
+    .social a img:hover{
+        transform: scale(1.2,1.2);
     }
 
     /* home content */
@@ -95,44 +114,45 @@ h3{
     .home-content{
         background: #6E00FF;
         max-width: 65%;
-        max-height: 72.5%;
+        max-height: 90vh;
         height: 100%;
         color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
     .subtitle{
         margin-top: 1rem;
     }
     .home-info svg{
-        margin-top: 2rem;
+        position: absolute;
+        bottom: 0;
+        margin: 3rem 0;
+        left: 50%;
+        transform: translateX(-50%);
         display: block;
     }
-
+    .avatar{
+        transform: scale(1.5);
+        margin-right: 4.1rem;
+    }
     /* animations home */
     .animation{
         position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
+        top: 10vh;
+        right: 0;
+        height: 90vh;
+        width: 35%;
         overflow: hidden;
         pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .rectangle1{
-        z-index: -1;
-        position: absolute;
-        bottom: 0;
-        left: 10%;
-        width: 100%;
-    }
-    .rectangle2{
-        z-index: -1;
-        position: absolute;
-        bottom: -2px;
-        left: 30%;
-        width: 100%;
+    .animation img{
+        width: 70%;
+
     }
 
 
