@@ -20,6 +20,11 @@ h1{
     font-size: 3.5rem;
     line-height: 1.5;
 }
+h2{
+    font-size: 8rem;
+    font-weight: 500;
+    z-index: 1;
+}
 h3{
     font-size: 2rem;
     font-weight: 400;
@@ -129,3 +134,118 @@ h3{
         left: 30%;
         width: 100%;
     }
+
+
+/* about section */
+
+#about{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.title-section{
+    height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.about svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width: 30%;
+    height:60rem;
+}
+.about-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-about{
+    width: 60%;
+}
+.info-about p{
+    font-size: 2.5rem;
+}
+.color-about{
+    background: #6E00FF;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* skills me sectionn */
+
+#skills{
+    height: 100vh;
+    position: relative;
+}
+.background{
+    background: #6E00FF;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.left{
+    left: 0;
+}
+.title-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+.skills-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+}
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    width: 40rem;
+    height: 60rem;
+    display: grid;
+    grid-template-rows:10% 2fr 1fr 2fr 10%;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 5rem;
+    transition: all .5s ease;
+}
+.card:hover{
+    transform: scale(1.1,1.1);
+}
+.card img{
+    grid-row: 2/3;
+    width: 40%;
+}
+.card h4{
+    grid-row: 3/4;
+    font-weight: 600;
+    color: #6E00FF;
+    font-size: 2rem;
+}
+.card p{
+    text-align: center;
+    font-size: 1.8rem;
+    grid-row: 4/5;
+}
