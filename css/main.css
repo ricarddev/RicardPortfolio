@@ -34,6 +34,13 @@ h3{
 h3 span {
     font-weight: 600;
 }
+h4{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #6E00FF;
+    text-transform: capitalize;
+}
 .btn{
     font-size: 2rem;
     color: #F8DAFD;
@@ -79,15 +86,8 @@ h3 span {
     .logo svg{
         width: 100%;
     }
-    #Ellipse{
-        animation: round 1s ;
-    }
-    @keyframes round{
-        50%{
-            stroke: #6E00EE;
-        }
-
-    }
+    
+    
     .menu a{
         color: white;
         font-size: 1.8rem;
@@ -158,7 +158,7 @@ h3 span {
 
 /* about section */
 
-#about{
+#about, #work{
     height: 100vh;
     width: 100%;
     position: relative;
@@ -235,7 +235,7 @@ h3 span {
 .skills-content{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 70vh;
 }
 .card{
@@ -249,7 +249,11 @@ h3 span {
     align-items: center;
     justify-items: center;
     padding: 3rem 5rem;
+    margin-left: 5rem;
     transition: all .5s ease;
+}
+.card:nth-child(1){
+    margin: 0;
 }
 .card:hover{
     transform: scale(1.1,1.1);
@@ -269,3 +273,215 @@ h3 span {
     font-size: 1.8rem;
     grid-row: 4/5;
 }
+
+
+/* work section */
+
+#work{
+    height: fit-content;
+}
+.project{
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project.rigth{
+    flex-direction: row-reverse;
+    background: #6E00FF;
+}
+.image-project{
+    width: 55%;
+    height: 62rem;
+    margin-right: 10rem;
+}
+.image-project img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.project.rigth .image-project{
+    margin: 0 0 0 10rem;
+}
+.project.rigth h4{
+    color: white;
+}
+.project p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.project.rigth p{
+    color: #ffffff;
+}
+.darker{
+    color: #C294FF;
+    border-color: #C294FF;
+}
+.info-project{
+    width: 45%;
+    padding-right: 15.4rem;
+}
+.project.rigth .info-project{
+    padding: 0 0 0 15.4rem;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.last-btn{
+    color: #6E00FF;
+    border-color: #6E00FF;
+    margin: 0;
+    animation: move 3s infinite;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+}
+.last-btn img{
+    transform: scale(0.8,0.8);
+}
+/* animation last .btn */
+@keyframes move{
+    0%{
+        transform: translateY(-1rem);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(-1rem);
+    }
+
+}
+/* HIRE SECTION & FORM */
+#hire{
+    position: relative;
+    height: 90vh;    
+}
+#hire .background{
+    height: 65%;
+}
+.hire-content{
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+    width: 165rem;
+    height:60rem;
+    border-radius: 1rem;
+}
+.banner{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    z-index: 2;
+}
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.info-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 5rem;
+    text-align: center; 
+}
+.info-banner h4{
+    color: #F8DAFD;
+}
+.info-banner p{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/* form */
+.form{
+    width: 55%;
+    padding: 0 5rem;
+}
+input, textarea{ 
+    font-family: 'Poppins', sans-serif;
+    height: 4.5rem;
+    width: 100%;
+    padding: 0 1.5rem;
+    font-size: 1.7rem;
+    border: 1px solid lightgray;
+    border-radius: .6rem;
+    outline: none;
+    transition: all .3s ease;
+    margin-bottom: 1.5rem;
+}
+
+textarea{
+    height: 15rem;
+    padding: 1rem 1.5rem 0;
+    resize: none;
+    margin-bottom: 1rem;
+}
+.hire-info, .hire-contact{
+    display: flex;
+}
+#name, #email{
+    margin-right: 1rem;
+}
+#lastname, #phone{
+    margin-left: 1rem;
+}
+.form .btn{
+    cursor: pointer;
+    border-color: #C294FF;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #6E00FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+footer .social{
+    width: fit-content;
+}
+footer .social i{
+    color: white;
+    font-size: 3.2rem;
+    margin-left: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+footer .social i:hover{
+    transform: scale(1.1,1.1);
+    color: #F8DAFD;
+}
+footer p{
+    font-size: 1.8rem;
+}
+
+
