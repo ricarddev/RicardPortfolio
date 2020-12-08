@@ -100,8 +100,13 @@ h4{
         justify-content: center;
         align-items: center;
     }
-    .social a img{
+    .social a{
         margin-left: 1rem;
+    }
+    .social a:nth-child(1){
+        margin: 0;
+    }
+    .social a img{
         transition: transform .3s ease;
         cursor: pointer;
     }
@@ -114,8 +119,7 @@ h4{
     .home-content{
         background: #6E00FF;
         max-width: 65%;
-        max-height: 90vh;
-        height: 180%;
+        height: 90vh;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -238,14 +242,14 @@ h4{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    height: 70vh;
+    height: 85.5%;
 }
 .card{
     background: #FFFFFF;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
     width: 42.5rem;
-    height: 60rem;
+    height: 100%;
     display: grid;
     grid-template-rows:10% 2fr 1fr 2fr 10%;
     align-items: center;
@@ -392,6 +396,8 @@ h4{
     width: 100%;
     height: 100%;
     z-index: -1;
+    border-radius: 1rem 0 0 1rem;
+
 }
 .info-banner{
     display: flex;
@@ -451,13 +457,6 @@ textarea{
 
 
 
-
-
-
-
-
-
-
 /* FOOTER */
 
 footer{
@@ -483,7 +482,95 @@ footer .social i:hover{
     color: #F8DAFD;
 }
 footer p{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 
+/* responsive design */
+
+@media (max-width:1302px){
+    /*  HOME */
+    .max-width{
+        padding: 0 5rem;
+    }
+    .navbar.max-width{
+        padding: 0 5rem 0 0;
+    }
+    .logo{
+        margin-left: -1rem;
+    }
+    .logo svg{
+        width: 80%;
+    }
+    .social a img{
+        width: 3.5rem;;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .subtitle{
+        font-size: 1.6rem;
+    }
+    .btn{
+        font-size: 1.6rem;
+    }
+    /* ABOUT ME */
+    .title svg{
+        width: 20rem;
+        height: 20rem;
+    }
+    .title-section{
+        height: 20rem;
+    }
+    .title-section h2{
+        font-size: 4rem;
+    }
+    .about-content{
+        height: 47.5%;
+    }
+    .image{
+        height: 100%;
+    }
+    .info-about p{
+        font-size: 1.8rem;
+    }
+    /* skills */
+    .skills-content{
+        height: 75%;
+        margin-top: 3rem;
+    }
+    .card{
+        width: 27.5%;
+        padding: 0 2rem;
+    }
+    .card h4{
+        font-size: 1.7rem;
+        margin: 0;
+    }
+    .card p{
+        font-size: 1.5rem;
+    }
+    /* projects */
+    .info-project h4, .hire-content h4{
+        font-size: 2.8rem;
+    }
+    .info-project p, .banner p{
+        font-size: 1.6rem;
+    }
+
+    /* from */
+    .hire-content{
+        margin: 2rem auto;
+        width: 90%;
+        height: 80%;
+    }
+    .form{
+        padding: 2rem 5rem;
+    }
+    input, textarea{ 
+        font-size: 1.4rem;
+    }
+    button.btn{
+        margin-top: .5rem;
+    }
+}
