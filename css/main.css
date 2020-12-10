@@ -59,7 +59,7 @@ h4{
 /* home */
     #home{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
     }
     .navbar.max-width{
         padding: 0 15.4rem 0 8rem;
@@ -170,7 +170,8 @@ h4{
 /* about section */
 
 #about, #work{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100%;
     position: relative;
 }
@@ -224,7 +225,7 @@ h4{
 /* skills me sectionn */
 
 #skills{
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 .background{
@@ -291,9 +292,6 @@ h4{
 
 /* work section */
 
-#work{
-    height: fit-content;
-}
 .project{
     padding: 4rem 0;
     display: flex;
@@ -374,7 +372,7 @@ h4{
 /* HIRE SECTION & FORM */
 #hire{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 #hire .background{
     height: 75%;
@@ -544,7 +542,7 @@ footer p{
     }
     /* skills */
     .skills-content{
-        height: 80%;
+        height: 100%;
         margin-top: 3rem;
     }
     .card{
@@ -587,7 +585,9 @@ footer p{
 }
 @media (max-width:1067px){
     /*  cards */
-    
+    .skills{
+        height: 120vh;
+    }
     .card{
         padding: 2rem 1rem;
         width: 35%;
@@ -605,7 +605,9 @@ footer p{
         height: fit-content;
     }
     /* hire me */
-    
+    .hire{
+        height: 120vh;
+    }
     .hire-content{
         width: 70%;
         flex-direction: column;
@@ -620,7 +622,7 @@ footer p{
         border-radius: 1rem 1rem 0 0;
     }
     .info-banner{
-        padding: 4rem 2rem;
+        padding: 5rem 2rem;
     }
     .form{
         width: 100%;
@@ -634,9 +636,9 @@ footer p{
     }
     .home-content{
         flex-wrap: wrap;
-        padding: 25% 5rem;
+        padding-bottom:5rem;
         flex-direction: column-reverse;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
     .home-info{
@@ -661,16 +663,22 @@ footer p{
         justify-content: flex-end;
     }
     /* about me */
+    .about{
+        height: 100vh;
+    }
     .about-content{
-        margin: 25% 0;
+        padding:30% 0;
     }
     .info-about p{
         font-size: 1.6rem;
     }
     /* skills */
-   
+    .skills{
+        height: 100vh;
+    }
     .skills-content{
-        margin: 15% 0;
+        margin: 0;
+        padding: 10% 0;
         width: 100%;
     }
     .card{
@@ -699,6 +707,9 @@ footer p{
         width: 60%;
     }
     /* hire me */
+    .hire{
+        height: 100vh;
+    }
     .hire-content{
         width: 90%;
     }
@@ -726,24 +737,25 @@ footer p{
     }
     .home-content{
         width: 100%;
+        justify-content: center;
         text-align: center;
-        padding: 25% 2rem;
+        padding-bottom:  8rem;
     }
     .avatar{
         margin-right: 2rem;
     }
     /* ABOUT SECTION */
     #about{
-        height: 140vh;
+        height: 130vh;
     }
     .about-content{
         display: block;
-        margin: 4rem 0 0 0 ;
+        margin: 2rem 0 0 0 ;
         text-align: center;
     }
     .image{
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         margin: 0 auto;
     }
     .info-about{
@@ -751,8 +763,8 @@ footer p{
         padding-top: 2rem;
     }
     /* skills section */
-    #skills{
-        height: 165vh;
+    .skills{
+        height: 160vh;
     }
     .skills .background{
         height: 100%;
@@ -797,6 +809,9 @@ footer p{
         padding: 0;
     }
     /* h8ire me */
+    .hire{
+        height: 100vh;
+    }
     .hire-content{
         margin: 25% 0;
         width: 100%;
